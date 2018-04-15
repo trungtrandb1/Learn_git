@@ -1,24 +1,3 @@
-<?php 
-	ob_start();
-	session_start();
-	define('DB_HOST', 'localhost');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
-    define('DB_NAME', 'book_store');
-
-    $conn = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
-    mysqli_set_charset($conn,'utf8');
-
-// ajax mini-cart
-  $cart = isset($_SESSION['cart']) ? $_SESSION['cart'] :[];
-	$_SESSION['cart_total'] = 0;
-	if (count($cart)) {
-		foreach ($cart as $c) {
-			$_SESSION['cart_total'] = $_SESSION['cart_total'] + $c['qty']; 
-		}
-	}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
