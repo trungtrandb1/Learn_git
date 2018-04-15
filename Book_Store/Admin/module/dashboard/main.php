@@ -31,7 +31,7 @@
                             <td><?php echo $admin['created'] ?></td>
                             <td style="text-align: right">
                                 <a href="index.php?module=dashboard&action=edit&id=<?php echo $admin['id'] ?>" class="btn btn-xs btn-default"><i class="fas fa-edit"></i></a>
-                                <a href="index.php?module=dashboard&action=delete&id=<?php echo $admin['id'] ?>" class="btn btn-xs btn-default" onclick="return confirm('Bạn có chắc chắn!')"><i class="fas fa-trash"></i></a>
+                                <!-- <a href="index.php?module=dashboard&action=delete&id=<?php echo $admin['id'] ?>" class="btn btn-xs btn-default" onclick="return confirm('Bạn có chắc chắn!')"><i class="fas fa-trash"></i></a> -->
                             </td>
                         </tr>
                     <?php endwhile; ?>
