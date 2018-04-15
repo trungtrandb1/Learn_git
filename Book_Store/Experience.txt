@@ -1,0 +1,7 @@
+- Git.
+- Valid input form.
+- Delete admin account can't less 1 account (check current account id).
+- Delete in database check constrain ( see Book_store again), should hide product inserted instead of delete it.
+- Name for image upload can use time format.
+- Login in admin and product page need different because customer can use userName like admin to access admin page
+- Don't need to focus on beautiful code, need to focus on feature and process
